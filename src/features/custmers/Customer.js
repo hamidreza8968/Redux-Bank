@@ -1,5 +1,5 @@
 import {useSelector} from "react-redux";
-import store from "../../storeV2";
+import store from "../../storeV2classicRedux";
 
 function Customer() {
 
