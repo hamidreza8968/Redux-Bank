@@ -10,7 +10,7 @@ const initialState = {
 
 const accountSlice = createSlice({
     name: "account",
-    initialState: initialState,
+    initialState,
     reducers:{
         deposit(state , action){
             state.balance  += action.payload;
@@ -39,12 +39,9 @@ const accountSlice = createSlice({
         },
         convertingCurrency(state){
             state.isLoading = true;
-
         }
     }
 });
-
-console.log(accountSlice);
 
 
 export const {withdraw , requestLoan , payLoan} = accountSlice.actions;
